@@ -18,7 +18,8 @@ dependencies {
 	testImplementation('org.springframework.boot:spring-boot-starter-test') {
 		exclude group: 'org.junit.vintage', module: 'junit-vintage-engine'
 	}
-	compile 'io.micrometer:micrometer-registry-prometheus:latest.release'
+	compile 'org.springframework.boot:spring-boot-starter-actuator'
+	compile 'io.micrometer:micrometer-registry-prometheus'
 }
 
 test {
